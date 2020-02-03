@@ -6,6 +6,23 @@ Web Pentesting Fuzz 字典,一个就够了。
 
 不定期更新，使用前建议git pull一下，同步更新。
 
+20200115:
+
+* xss字典增加burp官方的210条payload，放在easyXssPayload目录下的[burpXssPayload.txt](https://github.com/TheKingOfDuck/fuzzDicts/blob/master/easyXssPayload/burpXssPayload.txt)文件中。
+
+* 用户名字典增加了2018-2020青年安全圈黑阔们的id，数据来源[Security-Data-Analysis-and-Visualization](https://github.com/404notf0und/Security-Data-Analysis-and-Visualization)，分离了id,博客域名,github ID三个字段。放在userNameDict目录下[hineseHackerID.txt](https://github.com/TheKingOfDuck/fuzzDicts/blob/master/userNameDict/chineseHackerID.txt),遇到shell先去撞一下,自建waf这些id都标记为黑名单关键字就对了。
+
+* 其他优化，更新。
+
+
+20200106:
+
+* xss字典增加100+条新Payload，并合并到本项目。
+
+20200104:
+
+* 再次优化参数字典，感谢[key师傅](https://github.com/gh0stkey)的修正。
+
 20191219:
 
 * 使用正则`(\W)`过滤了很多无效的参数,如空格(){}等等,并允许-的存在，重新合并去重了一下参数字典，均放在AllParam.txt，感谢奶权师傅的反馈。
